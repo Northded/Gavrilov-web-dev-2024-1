@@ -9,30 +9,30 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 footer {
     background-color: black;
-    color: white; 
-    padding: 20px; 
+    color: white;
+    padding: 20px;
     text-align: left;
-    position: relative;   
-    left: -20px;           
-    width: calc(100% + 40px); 
+    position: relative;
+    left: -20px;
+    width: calc(100% + 40px);
 }
 
 footer p {
     margin: 0;
-    color: #f8f9fa; 
-    font-weight: 500; 
+    color: #f8f9fa;
+    font-weight: 500;
 }
 
 footer a {
     text-decoration: none;
-    color: #f8f9fa; 
+    color: #f8f9fa;
     font-size: 24px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 footer a:hover {
@@ -41,7 +41,7 @@ footer a:hover {
 
 footer address {
     font-style: normal;
-    color: #f8f9fa; 
+    color: #f8f9fa;
 }
 
 header {
@@ -96,7 +96,7 @@ p {
 
 ul {
     list-style-type: disc;
-    padding-left: 20px; 
+    padding-left: 20px;
     margin-left: -20px;
 }
 
