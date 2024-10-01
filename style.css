@@ -54,6 +54,7 @@ nav {
     display: flex;
     justify-content: left;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -61,8 +62,13 @@ nav a {
     color: #333;
     font-size: 24px;
 }
+
 nav a:hover {
     color: #ffbb00;
+}
+
+nav .active {
+    color: tomato;
 }
 
 main {
@@ -121,4 +127,44 @@ th, td {
     text-align: center;
     vertical-align: middle;
     font-size: 24px;
+}
+
+@media (max-width: 800px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 28px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    table th, table td {
+        font-size: 20px;
+    }
 }

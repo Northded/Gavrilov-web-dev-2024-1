@@ -1,0 +1,90 @@
+/* Стили для страницы "Собрать ланч" */
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 25px 25px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    cursor: pointer;
+}
+
+.dish:hover {
+    border: 2px solid tomato;
+}
+
+.dish:hover .add-btn {
+    background-color: tomato;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.dish p {
+    margin: 10px 0;
+}
+
+.dish .price {
+    font-size: 28px;
+}
+
+.dish .name {
+    font-size: 28px;
+}
+
+.dish .weight {
+    color: gray;
+}
+
+.add-btn {
+    background-color: #f1eee9;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 800px) {
+    .dishes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    header h1, section h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .dishes {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 28px;
+    }
+
+    section h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+}
