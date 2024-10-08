@@ -54,6 +54,86 @@
     cursor: pointer;
 }
 
+/* Стили для формы заказа */
+#order-form-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.order-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.order-block, .customer-block {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-block h3, .customer-block h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-block label, .customer-block label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.order-block select, .customer-block input, .customer-block textarea,
+.customer-block select, .customer-block input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.customer-block input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.customer-block fieldset {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.customer-block legend {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.customer-block fieldset label {
+    margin-right: 10px;
+}
+
+.customer-block button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.customer-block button[type="reset"] {
+    background-color: #ff6f61;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.customer-block button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+
 /* Адаптивность */
 @media (max-width: 800px) {
     .dishes {
@@ -66,6 +146,10 @@
 
     header h1, section h2 {
         text-align: center;
+    }
+
+    .order-form {
+        flex-direction: column;
     }
 }
 
