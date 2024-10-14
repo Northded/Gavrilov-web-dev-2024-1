@@ -86,7 +86,7 @@
 }
 
 .order-block select, .customer-block input, .customer-block textarea,
-.customer-block select, .customer-block input[type="checkbox"] {
+.customer-block select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -95,24 +95,38 @@
     font-size: 16px;
 }
 
-.customer-block input[type="checkbox"] {
-    width: auto;
+#comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Стили для чекбоксов и радио-кнопок */
+.customer-block input[type="checkbox"], .customer-block input[type="radio"] {
+    width: auto ;
     margin-right: 10px;
+}
+
+
+.customer-block label.flex,
+.customer-block fieldset label {
+    display: block;
+    align-items: center; 
 }
 
 .customer-block fieldset {
     border: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 20px 0; 
 }
 
 .customer-block legend {
     font-size: 16px;
     margin-bottom: 10px;
-}
-
-.customer-block fieldset label {
-    margin-right: 10px;
 }
 
 .customer-block button {

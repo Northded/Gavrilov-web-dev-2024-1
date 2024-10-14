@@ -87,20 +87,20 @@
                 <div class="dish">
                     <img src="img/orangejuice.jpg" alt="Апельсиновый сок">
                     <p class="price">100₽</p>
-                    <p class="name">Апельсиновый сок</p>
+                    <p class="name">Апельсиновый сок</п>
                     <p class="weight">200мл</p>
                     <button class="add-btn">Добавить</button>
                 </div>
                 <div class="dish">
                     <img src="img/carrotjuice.jpg" alt="Морковный сок">
-                    <p class="price">100₽</p>
-                    <p class="name">Морковный сок</p>
-                    <p class="weight">200мл</p>
+                    <p class="price">100₽</п>
+                    <p class="name">Морковный сок</п>
+                    <п class="weight">200мл</п>
                     <button class="add-btn">Добавить</button>
                 </div>
             </div>
         </section>
-        
+	
         <section id="order-form-section">
             <h2>Форма заказа</h2>
             <form action="https://httpbin.org/post" method="POST">
@@ -149,15 +149,17 @@
                         <label for="address">Адрес</label>
                         <input type="text" id="address" name="address" required>
 
-                        <label for="subscribe">
+                        <label for="subscribe" class="flex">
                             <input type="checkbox" id="subscribe" name="subscribe" checked>
                             Подписаться на рассылку
                         </label>
 
                         <fieldset>
                             <legend>Выбор времени доставки</legend>
-                            <label><input type="radio" name="delivery_time_choice" value="asap" required> Как можно скорее</label>
-                            <label><input type="radio" name="delivery_time_choice" value="specific_time"> Время</label>
+                            <label class="flex"><input type="radio" name="delivery_time_choice" value="asap" required> 
+                                   Как можно скорее</label>
+                            <label class="flex"><input type="radio" name="delivery_time_choice" value="specific_time"> 
+                                   Время</label>
                         </fieldset>
 
                         <label for="delivery_time">Указание времени доставки</label>
